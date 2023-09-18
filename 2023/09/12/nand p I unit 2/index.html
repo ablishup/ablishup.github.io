@@ -16,21 +16,23 @@
   <meta name="author" content="ablishup">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="binary addtionhalf adder and full adder distinction: half one is 2 bits num ,but full one is 3 bits num when two 16-bit num add,they may contribute to the caryy,if only use half adder,we cannot get ri">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/09/18/hello-world/index.html">
+<meta property="og:title" content="nand to tetris unit 2">
+<meta property="og:url" content="http://example.com/2023/09/12/nand%20p%20I%20unit%202/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="binary addtionhalf adder and full adder distinction: half one is 2 bits num ,but full one is 3 bits num when two 16-bit num add,they may contribute to the caryy,if only use half adder,we cannot get ri">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-18T11:34:10.736Z">
-<meta property="article:modified_time" content="2023-07-29T08:13:08.000Z">
+<meta property="og:image" content="http://example.com/img/2023-07-31-19-16-19.png">
+<meta property="article:published_time" content="2023-09-12T03:24:00.000Z">
+<meta property="article:modified_time" content="2023-09-17T07:38:04.436Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/2023-07-31-19-16-19.png">
   
   
   
-  <title>Hello World - Hexo</title>
+  <title>nand to tetris unit 2 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="nand to tetris unit 2"></span>
           
         </div>
 
@@ -207,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-18 19:34" pubdate>
-          2023年9月18日 晚上
+        <time datetime="2023-09-12 11:24" pubdate>
+          2023年9月12日 上午
         </time>
       </span>
     
@@ -219,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          901 字
         
       </span>
     
@@ -230,7 +232,7 @@
         
         
         
-          4 分钟
+          8 分钟
         
       </span>
     
@@ -267,24 +269,55 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">nand to tetris unit 2</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h2 id="binary-addtion"><a href="#binary-addtion" class="headerlink" title="binary addtion"></a>binary addtion</h2><h3 id="half-adder-and-full-adder"><a href="#half-adder-and-full-adder" class="headerlink" title="half adder and full adder"></a>half adder and full adder</h3><ol>
+<li>distinction:<ul>
+<li>half one is 2 bits num ,but full one is 3 bits num</li>
+<li>when two 16-bit num add,they may contribute to the caryy,if only use half adder,we cannot get right result,because it cannot add the carry with the two 1-bit num.</li>
+</ul>
+</li>
+</ol>
+<h3 id="16-bit-adder"><a href="#16-bit-adder" class="headerlink" title="16-bit adder"></a>16-bit adder</h3><ol>
+<li>structure:<ul>
+<li>it can be built by 16 full adders or 15 full adders with just 1 half adder in the most left place.</li>
+<li><img src="/img/2023-09-12-11-31-09.png" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+</ol>
+<h2 id="binary-division"><a href="#binary-division" class="headerlink" title="binary division"></a>binary division</h2><h3 id="negative-numbers"><a href="#negative-numbers" class="headerlink" title="negative numbers"></a>negative numbers</h3><ol>
+<li><p>complement: replace -x (b) by 2^n - x (b):<img src="/img/2023-09-12-19-35-29.png" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>positive num:0<del>2^(n-1)-1(b) the above is 0</del>7 and 0000~0111</li>
+<li>negative num:-1<del>-2^(n-1) the above is -1</del>-8 and 1111~1000</li>
+</ul>
+</li>
+</ol>
+<h3 id="achieve-the-division"><a href="#achieve-the-division" class="headerlink" title="achieve the division"></a>achieve the division</h3><p><img src="/img/2023-09-12-19-41-51.png" srcset="/img/loading.gif" lazyload></p>
+<ol>
+<li>representation: both the two num(-x &amp; 2^n-x) , their results of mol 2 is same. Like,-3 and 13(4-bits)</li>
+</ol>
+<ul>
+<li>tip: modulo 模运算</li>
+</ul>
+<h3 id="反码和补码原理"><a href="#反码和补码原理" class="headerlink" title="反码和补码原理"></a>反码和补码原理</h3><p><img src="/img/2023-09-12-19-51-23.png" srcset="/img/loading.gif" lazyload></p>
+<ol>
+<li><p>以4bits为例子，2^n -1是1111，再-x，等价于求反，最后再+1，那么就是2^n - x的实现了。</p>
+</li>
+<li><p>那么在硬件里怎么做到快速的+1，要分成两种情况讨论，最右边为0和最右边为1</p>
+<ul>
+<li>先讨论最右边为0，直接翻转变成1就行</li>
+<li>最右边为1，则一直翻转成0，直到碰到第一个0，把它翻转为1，然后停止。</li>
+</ul>
+</li>
+</ol>
+<h2 id="对于补码反码逻辑关系的思考-significant"><a href="#对于补码反码逻辑关系的思考-significant" class="headerlink" title="对于补码反码逻辑关系的思考(significant)"></a>对于补码反码逻辑关系的思考(significant)</h2><p>一个MSB或符号位为1的的binary，比如<strong>11011101</strong>，可以确定是一个负数，然后它的补码是<strong>00100011</strong>即35，因此可以确定<strong>11011101</strong>是-35。<br>in chinese:<img src="/img/2023-09-17-15-37-52.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="ALU-arithmetic-logic-unit-—-算术逻辑单元"><a href="#ALU-arithmetic-logic-unit-—-算术逻辑单元" class="headerlink" title="ALU(arithmetic logic unit)—-算术逻辑单元"></a>ALU(arithmetic logic unit)—-算术逻辑单元</h2><ol>
+<li>what is ALU?<img src="/img/2023-09-12-20-02-09.png" srcset="/img/loading.gif" lazyload></li>
+</ol>
 
                 
               </div>
@@ -292,6 +325,34 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AE%A1%E7%BB%84/" class="category-chain-item">计组</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%AE%A1%E7%BB%84/nand-part-I/" class="category-chain-item">nand part I</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
@@ -302,8 +363,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2023/09/18/hello-world/</div>
+      <div>nand to tetris unit 2</div>
+      <div>http://example.com/2023/09/12/nand p I unit 2/</div>
     </div>
     <div class="license-meta">
       
@@ -315,7 +376,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年9月18日</div>
+          <div>2023年9月12日</div>
         </div>
       
       
@@ -347,9 +408,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09/18/to%20use%20vim/" title="">
+                      <a href="/2023/09/12/proof%20of%20math/" title="数学自救指南">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">数学自救指南</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -357,8 +418,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/09/17/binary%20multiplication/" title="binary multiplication">
-                        <span class="hidden-mobile">binary multiplication</span>
+                      <a href="/2023/09/07/vocabulary/" title="the replace of some easy words">
+                        <span class="hidden-mobile">the replace of some easy words</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
