@@ -16,23 +16,23 @@
   <meta name="author" content="ablishup">
   <meta name="keywords" content="">
   
-    <meta name="description" content="lecture partNumeric expressions20202000 + 20-1 + 2 + 3 + 4 * ((5 &#x2F;&#x2F; 6) + 7 * 8 * 9) Call expressionsmax(3, 4.5) a,b可以是任何值，并且max和min里面可以有无限数量的值pow(100, 2)min(3, 4.5)pow(2, 100)max(1, -2, 3, -">
+    <meta name="description" content="指针基础知识 指针变量的定义：比如int *是指向整型的指针； 指针的初始化：type ch&#x3D;?; type *cp&#x3D;&amp;ch；  即初始化要用&amp;来生成地址。 强制转化成指针变量用：(type *)比如*100&#x3D;200是不合法的，但是*(int *) 100&#x3D;200是合法的。 指针的指针：int **c即int *(*c)。 正常的非指针char ch&#x3D;&#39;a;这句语句内，ch">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cs61a 1">
-<meta property="og:url" content="http://example.com/2023/07/30/py-cs61a-1/index.html">
+<meta property="og:title" content="POINT">
+<meta property="og:url" content="http://example.com/2023/09/20/point%20on%20c%201/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="lecture partNumeric expressions20202000 + 20-1 + 2 + 3 + 4 * ((5 &#x2F;&#x2F; 6) + 7 * 8 * 9) Call expressionsmax(3, 4.5) a,b可以是任何值，并且max和min里面可以有无限数量的值pow(100, 2)min(3, 4.5)pow(2, 100)max(1, -2, 3, -">
+<meta property="og:description" content="指针基础知识 指针变量的定义：比如int *是指向整型的指针； 指针的初始化：type ch&#x3D;?; type *cp&#x3D;&amp;ch；  即初始化要用&amp;来生成地址。 强制转化成指针变量用：(type *)比如*100&#x3D;200是不合法的，但是*(int *) 100&#x3D;200是合法的。 指针的指针：int **c即int *(*c)。 正常的非指针char ch&#x3D;&#39;a;这句语句内，ch">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/2023-07-31-19-16-19-1.png">
-<meta property="article:published_time" content="2023-07-30T12:00:00.000Z">
-<meta property="article:modified_time" content="2023-08-08T12:09:46.000Z">
+<meta property="og:image" content="http://example.com/img/2023-07-31-19-16-19-1.png.png">
+<meta property="article:published_time" content="2023-09-20T13:42:00.000Z">
+<meta property="article:modified_time" content="2023-09-23T12:19:45.213Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/2023-07-31-19-16-19-1.png">
+<meta name="twitter:image" content="http://example.com/img/2023-07-31-19-16-19-1.png.png">
   
   
   
-  <title>cs61a 1 - Hexo</title>
+  <title>POINT - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="cs61a 1"></span>
+            <span id="subtitle" data-typed-text="POINT"></span>
           
         </div>
 
@@ -209,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-30 20:00" pubdate>
-          2023年7月30日 晚上
+        <time datetime="2023-09-20 21:42" pubdate>
+          2023年9月20日 晚上
         </time>
       </span>
     
@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.8k 字
+          622 字
         
       </span>
     
@@ -232,7 +232,7 @@
         
         
         
-          16 分钟
+          6 分钟
         
       </span>
     
@@ -269,22 +269,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">cs61a 1</h1>
+            <h1 id="seo-header">POINT</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="lecture-part"><a href="#lecture-part" class="headerlink" title="lecture part"></a>lecture part</h2><h3 id="Numeric-expressions"><a href="#Numeric-expressions" class="headerlink" title="Numeric expressions"></a>Numeric expressions</h3><p>2020<br>2000 + 20<br>-1 + 2 + 3 + 4 * ((5 &#x2F;&#x2F; 6) + 7 * 8 * 9)</p>
-<h3 id="Call-expressions"><a href="#Call-expressions" class="headerlink" title="Call expressions"></a>Call expressions</h3><p><strong>max(3, 4.5)</strong> a,b可以是任何值，并且max和min里面可以有无限数量的值<br><strong>pow(100, 2)</strong><br><strong>min(3, 4.5)</strong><br>pow(2, 100)<br><strong>max(1, -2, 3, -4)</strong>  </p>
-<h3 id="Importing-and-arithmetic-with-call-expressions"><a href="#Importing-and-arithmetic-with-call-expressions" class="headerlink" title="Importing and arithmetic with call expressions"></a>Importing and arithmetic with call expressions</h3><p>from operator import add, mul &#x2F;&#x2F;重要的在py里引入两个函数————两个数相加or相乘<br><strong>add(1, 2)</strong><br><strong>mul(4, 6)</strong><br>mul(add(4, mul(4, 6)), add(3, 5))<br><strong>add(4, mul(9, mul(add(4, mul(4, 6)), add(3, 5))))</strong> &#x2F;&#x2F;函数可以嵌套使用<br>对于py里函数的解释：<br><img src="/img/2023-07-31-20-53-50.png" srcset="/img/loading.gif" lazyload></p>
-<h3 id="Objects"><a href="#Objects" class="headerlink" title="Objects"></a>Objects</h3><h3 id="Note-Download-from-http-composingprograms-com-shakespeare-txt"><a href="#Note-Download-from-http-composingprograms-com-shakespeare-txt" class="headerlink" title="Note: Download from http://composingprograms.com/shakespeare.txt"></a>Note: Download from <a target="_blank" rel="noopener" href="http://composingprograms.com/shakespeare.txt">http://composingprograms.com/shakespeare.txt</a></h3><p><strong>shakes &#x3D; open(‘shakespeare.txt’)</strong> &#x2F;&#x2F;把shakes声明为打开文件操作<br>注释一下py打开url的新操作</p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs py"><span class="hljs-keyword">from</span> urllib.request <span class="hljs-keyword">import</span> urlopen//用了这行的话可以直接urlopen(<span class="hljs-string">&#x27;&#x27;</span>)<br><span class="hljs-keyword">import</span> urllib.request<br>htmlcode=urllib.request.urlopen(<span class="hljs-string">&quot;http://www.baidu.com&quot;</span>).read()<br><span class="hljs-built_in">print</span>(htmlcode)<br></code></pre></td></tr></table></figure>
+                <h2 id="指针基础知识"><a href="#指针基础知识" class="headerlink" title="指针基础知识"></a>指针基础知识</h2><ol>
+<li>指针变量的定义：比如<code>int *</code>是<strong>指向整型的指针</strong>；</li>
+<li>指针的初始化：<code>type ch=?; type *cp=&amp;ch</code>；  即初始化要用<code>&amp;</code>来生成地址。</li>
+<li>强制转化成指针变量用：<code>(type *)</code>比如<code>*100=200</code>是不合法的，但是<code>*(int *) 100=200</code>是合法的。</li>
+<li>指针的指针：<code>int **c</code>即<code>int *(*c)</code>。</li>
+<li>正常的非指针<code>char ch=&#39;a;</code>这句语句内，<code>ch</code>当左值的时候是<strong>地址，而不是该地址所包含的值</strong>，<code>ch</code>是右值的时候才是表达式的值，<strong>所以，可以说这句语句是把<code>&#39;a&#39;</code>存入<code>ch</code>的地址内</strong>。</li>
+<li>如果<code>int ch=100;int *cp=&amp;ch;</code>那么<strong>cp&#x3D;&amp;ch</strong>。</li>
+<li>可以看出<code>*cp</code>作为<strong>右值</strong>的时候是间接访问符访问，对应的值是访问地址所存变量的值，如果依照<code>6.</code>的初始化,那么就是100(ch)；<del>作为<strong>左值</strong>的时候，是指向初始话变量的地址，所以指针的初始化是<code>*cp=&amp;ch</code>。</del> 在严谨的编译器里<code>*cp</code>不能单独出来作左值，就算在不严谨的编译器里，也<strong>最好不要用<code>*cp</code>来作左值</strong>。上面删除那行只能在<code>int *</code>那行成立。</li>
+<li>现在讨论<code>*(cp + 1)</code>(<code>*cp + 1</code>只能做右值，结果很显然)，作<strong>右值</strong>的时候，是在地址位(&amp;ch+4)的值，因为没有初始化所以是未知的；作<strong>左值</strong>的时候就是(&amp;ch+4)的地址，直接输出<code>cp+1</code>可见，(cp+1)&#x3D;&amp;ch+4(这里可以插入一下，<img src="/img/2023-09-22-15-34-23.png" srcset="/img/loading.gif" lazyload><img src="/img/2023-09-22-15-42-52.png" srcset="/img/loading.gif" lazyload>)  <strong>IN ALL</strong>:<code>cp+1</code>就是访问下一个地址。</li>
+</ol>
 
-<p><strong>text &#x3D; shakes.read().split()</strong>&#x2F;&#x2F;把text声明为打开、读取、分割好了的文件<br><strong>len(text)</strong>&#x2F;&#x2F;求长度<br><strong>text[:25]</strong>&#x2F;&#x2F;cat前25个字符串<br><strong>text.count(‘the’)</strong>&#x2F;&#x2F;计数，注意是’’单引号<br>text.count(‘thou’)<br>text.count(‘you’)<br>text.count(‘forsooth’)<br>text.count(‘,’)  </p>
-<h3 id="Sets"><a href="#Sets" class="headerlink" title="Sets"></a>Sets</h3><p><strong>words &#x3D; set(text)</strong>&#x2F;&#x2F;设置为一个字符集合，会删去重复的<br><strong>len(words)</strong>&#x2F;&#x2F;长度<br><strong>max(words)</strong> &#x2F;&#x2F;This line finds the maximum element in the words set. When applied to a set of strings, max() will return the “maximum” string based on 字母顺序. In this context, it will return the last word when the words are sorted in 字母顺序.<br><strong>max(words, key&#x3D;len)</strong>  &#x2F;&#x2F;This line finds the maximum element in the words set based <strong>on the length of each word</strong>. The <strong>key&#x3D;len</strong> argument is indicating that the comparison should be based on the length of the words rather than their 字母顺序. As a result, it will return the longest word in the set. </p>
-<h3 id="Reversals"><a href="#Reversals" class="headerlink" title="Reversals"></a>Reversals</h3><p><strong>‘draw’[::-1]</strong>&#x2F;&#x2F;回文切换<br><strong>‘character’ in words &gt;&gt;&gt; True&#x2F;False</strong>&#x2F;&#x2F;判断是否在合集里<br><strong>{w for w in words if w &#x3D;&#x3D; w[::-1] and len(w)&gt;4}</strong>&#x2F;&#x2F;把w换成a都行，查找在字符集合words里的回文字符<br><strong>{w for w in words if w[::-1] in words and len(w) &#x3D;&#x3D; 4}</strong>&#x2F;&#x2F;都在words里出现过的<br><strong>{w for w in words if w[::-1] in words and len(w) &gt; 6}</strong>  </p>
-<p><img src="/img/2023-07-31-23-25-00.png" srcset="/img/loading.gif" lazyload></p>
-<h2 id="capture-part-——-只有第一节有，和lecture一模一样，不用看，浪费时间"><a href="#capture-part-——-只有第一节有，和lecture一模一样，不用看，浪费时间" class="headerlink" title="capture part —— 只有第一节有，和lecture一模一样，不用看，浪费时间"></a>capture part —— 只有第一节有，和lecture一模一样，不用看，浪费时间</h2>
                 
               </div>
             
@@ -302,15 +302,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/python/" class="category-chain-item">python</a>
+  <a href="/categories/C-CPP/" class="category-chain-item">C/CPP</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/python/cs61a/" class="category-chain-item">cs61a</a>
-  
-  
-
   
 
       </span>
@@ -329,8 +322,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>cs61a 1</div>
-      <div>http://example.com/2023/07/30/py-cs61a-1/</div>
+      <div>POINT</div>
+      <div>http://example.com/2023/09/20/point on c 1/</div>
     </div>
     <div class="license-meta">
       
@@ -342,7 +335,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月30日</div>
+          <div>2023年9月20日</div>
         </div>
       
       
@@ -374,9 +367,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/30/nand%20p%20I%20unit%201/" title="nand to tetris unit 1">
+                      <a href="/2023/09/25/objetc/" title="">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">nand to tetris unit 1</span>
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -384,8 +377,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/30/py-cs61a-2/" title="cs61a 2">
-                        <span class="hidden-mobile">cs61a 2</span>
+                      <a href="/2023/09/19/nand%20p%20I%20unit%203/" title="nand to tetris unit 3">
+                        <span class="hidden-mobile">nand to tetris unit 3</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
