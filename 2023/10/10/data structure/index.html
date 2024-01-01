@@ -13,22 +13,24 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="ablishup">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2023/09/25/objetc/index.html">
+    <meta name="description" content="链表链表的基本结构123456typedef struct Node&amp;#123;    int data;    struct Node *next;&#x2F;&#x2F;关键了属于是&amp;#125;node;  对链表应该进行的操作 初始化函数node* list_init();关键就是先建立再指向，最后返回head，链表就成了，很抽象。  12345678910111213141516node* list_init">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构记录">
+<meta property="og:url" content="http://example.com/2023/10/10/data%20structure/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="链表链表的基本结构123456typedef struct Node&amp;#123;    int data;    struct Node *next;&#x2F;&#x2F;关键了属于是&amp;#125;node;  对链表应该进行的操作 初始化函数node* list_init();关键就是先建立再指向，最后返回head，链表就成了，很抽象。  12345678910111213141516node* list_init">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-25T02:19:54.201Z">
-<meta property="article:modified_time" content="2023-09-25T02:19:54.201Z">
+<meta property="article:published_time" content="2023-10-10T02:54:00.000Z">
+<meta property="article:modified_time" content="2023-10-12T14:46:52.923Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo</title>
+  <title>数据结构记录 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -194,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="数据结构记录"></span>
           
         </div>
 
@@ -205,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-25 10:19" pubdate>
-          2023年9月25日 上午
+        <time datetime="2023-10-10 10:54" pubdate>
+          2023年10月10日 上午
         </time>
       </span>
     
@@ -217,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          1k 字
         
       </span>
     
@@ -228,7 +230,7 @@
         
         
         
-          1 分钟
+          9 分钟
         
       </span>
     
@@ -265,18 +267,54 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">数据结构记录</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><h3 id="链表的基本结构"><a href="#链表的基本结构" class="headerlink" title="链表的基本结构"></a>链表的基本结构</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><br><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Node</span>&#123;</span><br>    <span class="hljs-type">int</span> data;<br>    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Node</span> *<span class="hljs-title">next</span>;</span><span class="hljs-comment">//关键了属于是</span><br>&#125;node;<br><br></code></pre></td></tr></table></figure>
+
+<h3 id="对链表应该进行的操作"><a href="#对链表应该进行的操作" class="headerlink" title="对链表应该进行的操作"></a>对链表应该进行的操作</h3><ol>
+<li>初始化函数<code>node* list_init();</code><br>关键就是先建立再指向，最后返回head，链表就成了，很抽象。</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c">node* <span class="hljs-title function_">list_init</span><span class="hljs-params">()</span>&#123;<span class="hljs-comment">// 要返回指向node的指针</span><br>    <span class="hljs-type">int</span> d;<br>    node *head=<span class="hljs-literal">NULL</span>,*str=<span class="hljs-literal">NULL</span>;<span class="hljs-comment">// 初始化head是头，str用来继续生成</span><br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;d);<br>    <span class="hljs-keyword">while</span>(d!=<span class="hljs-number">-1</span>)&#123;<span class="hljs-comment">// 这个是题目要求</span><br>        node *p=(node*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(node));<span class="hljs-comment">// 申请空间</span><br>        p-&gt;data=d;<br>        p-&gt;next=<span class="hljs-literal">NULL</span>;<span class="hljs-comment">// 新的结点总是要指向NULL</span><br>        <span class="hljs-keyword">if</span>(head == <span class="hljs-literal">NULL</span>) head=p;<br>        <span class="hljs-keyword">else</span> str-&gt;next=p;<span class="hljs-comment">// 用来链接previous and current</span><br>        str=p; <span class="hljs-comment">// 关键 把链表构成了</span><br>        <span class="hljs-comment">//free(p);// 不可以执行的操作</span><br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;d);<br>    &#125;<br>    <span class="hljs-keyword">return</span> head;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>第二个版本：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs c"><br>node* <span class="hljs-title function_">list_init</span><span class="hljs-params">()</span>&#123;<span class="hljs-comment">// 要返回指向node的指针</span><br>    <span class="hljs-type">int</span> d;<br>    node *str;<span class="hljs-comment">// 初始化head是头，str用来继续生成</span><br>    node *head=(node *)<span class="hljs-built_in">malloc</span>(sizeod(node));<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;d);<br>    head-&gt;data=d;<br>    head-&gt;next=<span class="hljs-literal">NULL</span>;<br>    str=head;<br>    <span class="hljs-keyword">while</span>(d!=<span class="hljs-number">-1</span>)&#123;<span class="hljs-comment">// 这个是题目要求</span><br>        node *p=(node*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(node));<br>        <span class="hljs-comment">// 先建立再指向</span><br>        p-&gt;data=d;<br>        p-&gt;next=<span class="hljs-literal">NULL</span>;<span class="hljs-comment">// 新的结点总是要指向NULL</span><br>        str-&gt;next=p;<span class="hljs-comment">// 用来链接previous and current</span><br>        str=p; <span class="hljs-comment">// 关键 把链表构成了</span><br>        <span class="hljs-comment">// free(p); // 错误的，如果free掉p,那么我们初始化的那个链表就没有结尾了</span><br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;d);<br>    &#125;<br>    <span class="hljs-keyword">return</span> head;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/C-CPP/" class="category-chain-item">C/CPP</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/C-CPP/%E7%AE%97%E6%B3%95/" class="category-chain-item">算法</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
@@ -287,20 +325,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://example.com/2023/09/25/objetc/</div>
+      <div>数据结构记录</div>
+      <div>http://example.com/2023/10/10/data structure/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>John Doe</div>
+          <div>ablishup</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年9月25日</div>
+          <div>2023年10月10日</div>
         </div>
       
       
@@ -332,9 +370,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09/29/learning%20verilog/" title="VERILOG language">
+                      <a href="/2023/11/13/objetc/" title="重载运算符">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">VERILOG language</span>
+                        <span class="hidden-mobile">重载运算符</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -342,8 +380,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/09/20/point%20on%20c%201/" title="POINT">
-                        <span class="hidden-mobile">POINT</span>
+                      <a href="/2023/09/29/learning%20verilog/" title="VERILOG language">
+                        <span class="hidden-mobile">VERILOG language</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

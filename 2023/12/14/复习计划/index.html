@@ -16,23 +16,21 @@
   <meta name="author" content="ablishup">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目汇总 1270 1238  组合数的思路 先把每行首尾赋值成1 正下方（y-1）+右下方（x-1，y-1） 行数是从第二行开始，不然会空 代码体现：  12345678910void zuhe(int n)&#x2F;&#x2F;n是行数&amp;#123;    for(int i&#x3D;1;i&lt;&#x3D;n;i++) C[i][0]&#x3D;C[i][i]&#x3D;1;    for(int i&#x3D;2;i&lt;&#x3D;n;i++)&amp;#123;&#x2F;&#x2F;">
+    <meta name="description" content="期末复习各科目考试时间安排   科目 考试时间 还有多久    离散 23-12-28 16 d   数据结构 24-1-3 22 d   计组 24-1-4 23 d   数分 24-1-9 28 d   线代 24-1-10 29 d   大物 24-1-11 30 d   概率论 24-1-12 31 d   c语言 24-1-15 34 d   具体每天安排 离散 数据结构 计组  课">
 <meta property="og:type" content="article">
-<meta property="og:title" content="some notes in oj of XTU">
-<meta property="og:url" content="http://example.com/2023/08/06/the%20difficulties%20in%20oj/index.html">
+<meta property="og:title" content="数据结构错题复习">
+<meta property="og:url" content="http://example.com/2023/12/14/%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="题目汇总 1270 1238  组合数的思路 先把每行首尾赋值成1 正下方（y-1）+右下方（x-1，y-1） 行数是从第二行开始，不然会空 代码体现：  12345678910void zuhe(int n)&#x2F;&#x2F;n是行数&amp;#123;    for(int i&#x3D;1;i&lt;&#x3D;n;i++) C[i][0]&#x3D;C[i][i]&#x3D;1;    for(int i&#x3D;2;i&lt;&#x3D;n;i++)&amp;#123;&#x2F;&#x2F;">
+<meta property="og:description" content="期末复习各科目考试时间安排   科目 考试时间 还有多久    离散 23-12-28 16 d   数据结构 24-1-3 22 d   计组 24-1-4 23 d   数分 24-1-9 28 d   线代 24-1-10 29 d   大物 24-1-11 30 d   概率论 24-1-12 31 d   c语言 24-1-15 34 d   具体每天安排 离散 数据结构 计组  课">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/2023-07-31-19-16-19-1.png.png">
-<meta property="article:published_time" content="2023-08-06T02:54:00.000Z">
-<meta property="article:modified_time" content="2023-10-12T16:12:35.056Z">
+<meta property="article:published_time" content="2023-12-14T09:42:00.000Z">
+<meta property="article:modified_time" content="2023-12-14T09:42:53.623Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/2023-07-31-19-16-19-1.png.png">
   
   
   
-  <title>some notes in oj of XTU - Hexo</title>
+  <title>数据结构错题复习 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="some notes in oj of XTU"></span>
+            <span id="subtitle" data-typed-text="数据结构错题复习"></span>
           
         </div>
 
@@ -209,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-06 10:54" pubdate>
-          2023年8月6日 上午
+        <time datetime="2023-12-14 17:42" pubdate>
+          2023年12月14日 下午
         </time>
       </span>
     
@@ -221,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          699 字
+          676 字
         
       </span>
     
@@ -269,30 +267,205 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">some notes in oj of XTU</h1>
+            <h1 id="seo-header">数据结构错题复习</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="题目汇总"><a href="#题目汇总" class="headerlink" title="题目汇总"></a>题目汇总</h2><ol>
-<li>1270</li>
-<li>1238</li>
-</ol>
-<h2 id="组合数的思路"><a href="#组合数的思路" class="headerlink" title="组合数的思路"></a>组合数的思路</h2><ol>
-<li>先把<strong>每行</strong>首尾赋值成1</li>
-<li>正下方（y-1）+右下方（x-1，y-1）</li>
-<li>行数是从第二行开始，不然会空</li>
-<li>代码体现：</li>
-</ol>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">zuhe</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span><span class="hljs-comment">//n是行数</span><br>&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++) C[i][<span class="hljs-number">0</span>]=C[i][i]=<span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i&lt;=n;i++)&#123;<span class="hljs-comment">//注意是从第二行开始</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">1</span>;j&lt;=n;j++)&#123;<br>            C[i][j]=(C[i<span class="hljs-number">-1</span>][j]+C[i<span class="hljs-number">-1</span>][j<span class="hljs-number">-1</span>])%mo;<span class="hljs-comment">//一个递归的过程</span><br>        &#125;<br>    &#125;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+                <font face="宋体">
 
-<ol start="5">
-<li>注意：上述代码的<strong>mo</strong>是应题目要求的除模，数字较小的时候可以忽略</li>
+<h1 id="期末复习"><a href="#期末复习" class="headerlink" title="期末复习"></a>期末复习</h1><h2 id="各科目考试时间安排"><a href="#各科目考试时间安排" class="headerlink" title="各科目考试时间安排"></a>各科目考试时间安排</h2><table>
+<thead>
+<tr>
+<th align="center">科目</th>
+<th align="center">考试时间</th>
+<th align="center">还有多久</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">离散</td>
+<td align="center">23-12-28</td>
+<td align="center">16 d</td>
+</tr>
+<tr>
+<td align="center">数据结构</td>
+<td align="center">24-1-3</td>
+<td align="center">22 d</td>
+</tr>
+<tr>
+<td align="center">计组</td>
+<td align="center">24-1-4</td>
+<td align="center">23 d</td>
+</tr>
+<tr>
+<td align="center">数分</td>
+<td align="center">24-1-9</td>
+<td align="center">28 d</td>
+</tr>
+<tr>
+<td align="center">线代</td>
+<td align="center">24-1-10</td>
+<td align="center">29 d</td>
+</tr>
+<tr>
+<td align="center">大物</td>
+<td align="center">24-1-11</td>
+<td align="center">30 d</td>
+</tr>
+<tr>
+<td align="center">概率论</td>
+<td align="center">24-1-12</td>
+<td align="center">31 d</td>
+</tr>
+<tr>
+<td align="center">c语言</td>
+<td align="center">24-1-15</td>
+<td align="center">34 d</td>
+</tr>
+</tbody></table>
+<h2 id="具体每天安排"><a href="#具体每天安排" class="headerlink" title="具体每天安排"></a>具体每天安排</h2><ol>
+<li>离散</li>
+<li>数据结构</li>
+<li>计组</li>
 </ol>
-<h2 id="分解质因数会用到的小技巧"><a href="#分解质因数会用到的小技巧" class="headerlink" title="分解质因数会用到的小技巧"></a>分解质因数会用到的小技巧</h2><h3 id="前缀和cnt-i-cnt-i-1-something"><a href="#前缀和cnt-i-cnt-i-1-something" class="headerlink" title="前缀和cnt[i]=cnt[i-1]+something;"></a>前缀和<code>cnt[i]=cnt[i-1]+something;</code></h3><h3 id="埃筛"><a href="#埃筛" class="headerlink" title="埃筛"></a>埃筛</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span><br><span class="hljs-type">const</span> <span class="hljs-type">int</span> MAX=<span class="hljs-number">1e6</span>+<span class="hljs-number">5</span><br><span class="hljs-type">int</span> flag[MAX]=&#123;<span class="hljs-number">0</span>&#125;;<br><span class="hljs-type">void</span> <span class="hljs-title function_">prime</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>&#123;<br>    flag[<span class="hljs-number">0</span>]=flag[<span class="hljs-number">1</span>]=<span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-built_in">sqrt</span>(n);i++)&#123;<br>        <span class="hljs-keyword">if</span>(!flag[i])&#123;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=i*i;j&lt;=n;j+=i)&#123;<br>                flag[j]=<span class="hljs-number">1</span>; <span class="hljs-comment">// caution!!!!!!! is ** j ** !!!!!!!</span><br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h2 id="用欧拉方程计算质因数的技巧"><a href="#用欧拉方程计算质因数的技巧" class="headerlink" title="用欧拉方程计算质因数的技巧"></a>用欧拉方程计算质因数的技巧</h2><p>目标：<img src="/img/2023-10-13-00-09-17.png" srcset="/img/loading.gif" lazyload></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><br><span class="hljs-keyword">if</span>(!flag[i])&#123;<br>    <span class="hljs-keyword">while</span>(n%i==<span class="hljs-number">0</span>)&#123;<br>        n/=i;<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+<p>课业部分：</p>
+<ul>
+<li>数分-每周3个</li>
+<li>概率论-每周2个</li>
+<li>数据结构-到12&#x2F;18</li>
+<li>大物-两周一次</li>
+<li>线代自己找-每周1个</li>
+</ul>
+<h2 id="离散"><a href="#离散" class="headerlink" title="离散"></a>离散</h2><h3 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h3><p>总共 4 章 25个小知识点</p>
+<ul>
+<li>19 整数<ul>
+<li>19.1 -&gt; 19.5</li>
+<li>6节</li>
+</ul>
+</li>
+<li>20 群<ul>
+<li>20.1 -&gt; 20.6</li>
+<li>6节</li>
+</ul>
+</li>
+<li>21 环<ul>
+<li>21.1 -&gt; 21.7</li>
+<li>7节</li>
+</ul>
+</li>
+<li>22 格+布尔代数<ul>
+<li>22.1 -&gt; 21.6</li>
+<li>6节</li>
+</ul>
+</li>
+</ul>
+<h3 id="复习资料"><a href="#复习资料" class="headerlink" title="复习资料"></a>复习资料</h3><ol>
+<li>作业题目</li>
+<li>试卷</li>
+<li>ppt</li>
+<li>课本</li>
+<li>网课</li>
+<li>去网上找题目刷</li>
+</ol>
+<h3 id="试卷分析"><a href="#试卷分析" class="headerlink" title="试卷分析"></a>试卷分析</h3><h3 id="错题"><a href="#错题" class="headerlink" title="错题"></a>错题</h3><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="知识点-1"><a href="#知识点-1" class="headerlink" title="知识点-"></a>知识点-</h3><p>总共八章41个知识点</p>
+<ul>
+<li>1 概论<ul>
+<li>1.1 -&gt; 1。4</li>
+<li>4节</li>
+</ul>
+</li>
+<li>2 数据结构基础<ul>
+<li>2.1 -&gt; 2.3</li>
+<li>3节</li>
+</ul>
+</li>
+<li>3 线性结构<ul>
+<li>3.1 -&gt; 3.5</li>
+<li>5节</li>
+</ul>
+</li>
+<li>4 树<ul>
+<li>4.1 -&gt; 4.6</li>
+<li>6节</li>
+</ul>
+</li>
+<li>5 散列查找<ul>
+<li>5.1 -&gt; 5.6</li>
+<li>6节</li>
+</ul>
+</li>
+<li>6 图<ul>
+<li>6.1 -&gt; 6.9</li>
+<li>9节</li>
+</ul>
+</li>
+<li>7 排序<ul>
+<li>7.1 -&gt; 7.8</li>
+<li>8节</li>
+</ul>
+</li>
+<li>8 综合应用<ul>
+<li>8.1 -&gt; 8.2</li>
+<li>2节</li>
+</ul>
+</li>
+</ul>
+<h3 id="复习资料-1"><a href="#复习资料-1" class="headerlink" title="复习资料-"></a>复习资料-</h3><ol>
+<li>作业题目</li>
+<li>实验题目</li>
+<li>试卷</li>
+<li>ppt</li>
+<li>课本</li>
+<li>网课</li>
+<li>去网上找题目刷</li>
+</ol>
+<h3 id="试卷分析-1"><a href="#试卷分析-1" class="headerlink" title="试卷分析"></a>试卷分析</h3><h3 id="错题-1"><a href="#错题-1" class="headerlink" title="错题"></a>错题</h3><h2 id="计组"><a href="#计组" class="headerlink" title="计组"></a>计组</h2><h3 id="知识点–"><a href="#知识点–" class="headerlink" title="知识点–"></a>知识点–</h3><p>总共7章43个知识点</p>
+<ul>
+<li>1 概论<ul>
+<li>1.1 -&gt; 1.6</li>
+<li>6节</li>
+</ul>
+</li>
+<li>2 运算方法和运算器<ul>
+<li>2.1 -&gt; 2.5</li>
+<li>5节</li>
+</ul>
+</li>
+<li>3 存储系统<ul>
+<li>3.1 -&gt; 3.7</li>
+<li>7节</li>
+</ul>
+</li>
+<li>4 总线<ul>
+<li>4.1 -&gt; 4.6</li>
+<li>6节</li>
+</ul>
+</li>
+<li>5 指令系统<ul>
+<li>5.1 -&gt; 5.7</li>
+<li>7节</li>
+</ul>
+</li>
+<li>6 cpu<ul>
+<li>6.1 -&gt; 6.6</li>
+<li>6节</li>
+</ul>
+</li>
+<li>7 I&#x2F;O<ul>
+<li>7.1 -&gt; 7.6</li>
+<li>6节</li>
+</ul>
+</li>
+</ul>
+<h3 id="复习资料-2"><a href="#复习资料-2" class="headerlink" title="复习资料"></a>复习资料</h3><ol>
+<li>作业题目</li>
+<li>试卷</li>
+<li>ppt</li>
+<li>课本</li>
+<li>网课</li>
+<li>去网上找题目刷</li>
+</ol>
+<h3 id="试卷分析-2"><a href="#试卷分析-2" class="headerlink" title="试卷分析"></a>试卷分析</h3><h3 id="错题-2"><a href="#错题-2" class="headerlink" title="错题"></a>错题</h3></font>
 
                 
               </div>
@@ -311,7 +484,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/C-CPP/" class="category-chain-item">C/CPP</a>
+  <a href="/categories/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" class="category-chain-item">期末复习</a>
   
   
 
@@ -331,8 +504,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>some notes in oj of XTU</div>
-      <div>http://example.com/2023/08/06/the difficulties in oj/</div>
+      <div>数据结构错题复习</div>
+      <div>http://example.com/2023/12/14/复习计划/</div>
     </div>
     <div class="license-meta">
       
@@ -344,7 +517,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月6日</div>
+          <div>2023年12月14日</div>
         </div>
       
       
@@ -376,9 +549,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/06/point%20on%20c/" title="c和指针">
+                      <a href="/2023/12/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%94%99%E9%A2%98%E5%A4%8D%E4%B9%A0/" title="数据结构错题复习">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">c和指针</span>
+                        <span class="hidden-mobile">数据结构错题复习</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -386,8 +559,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/04/py-cs61a-3/" title="cs61a 3">
-                        <span class="hidden-mobile">cs61a 3</span>
+                      <a href="/2023/11/13/objetc/" title="重载运算符">
+                        <span class="hidden-mobile">重载运算符</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
